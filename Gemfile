@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'faraday', '~> 0.8.7'
 gem 'pg', '~> 0.15.1'
+gem 'd3-rails'
+
 
 group :test do
   gem 'sqlite3'
