@@ -1,5 +1,5 @@
 BizStartr::Application.routes.draw do
 
-  root :to => 'map#show'
+  root :to => 'maps#show'
 
 end
