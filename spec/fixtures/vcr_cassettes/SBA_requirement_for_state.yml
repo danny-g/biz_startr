@@ -1,0 +1,174 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.sba.gov/license_permit/all_by_state/FL.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.8.7
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 01 Jun 2013 21:02:41 GMT
+      server:
+      - Apache/2.2.14 (Ubuntu)
+      x-powered-by:
+      - PHP/5.3.2-1ubuntu4.19
+      content-length:
+      - '13015'
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - close
+      content-type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"county_sites":[],"local_sites":[],"state_sites":[{"link_title":"Get
+        Unemployment Tax Requirements","description":null,"url":"http:\/\/dor.myflorida.com\/dor\/taxes\/unemploy_comp_law.html","category":"Employer
+        Requirements","county":null,"state":"FL","business_type":"Insurance Requirements","section":"Unemployment
+        Insurance Tax","resource_group_description":"Businesses with employees are
+        required to pay unemployment insurance taxes under certain conditions. If
+        your business is required to pay these taxes, you must register your business
+        with your state''s workforce agency:"},{"link_title":"Find Workers'' Comp
+        Requirements","description":null,"url":"http:\/\/www.myfloridacfo.com\/wc\/faq\/faqemplyrs.html","category":"Employer
+        Requirements","county":null,"state":"FL","business_type":"Insurance Requirements","section":"Workers''
+        Compensation Insurance","resource_group_description":"Businesses with employees
+        are required to carry Workers'' Compensation Insurance coverage through a
+        commercial carrier, on a self-insured basis, or through the state Workers''
+        Compensation Insurance program."},{"link_title":"Report New Hires","description":null,"url":"http:\/\/power.networksolutions.com\/index.html","category":"Employer
+        Requirements","county":null,"state":"FL","business_type":"New Hire Reporting
+        Requirements","section":null,"resource_group_description":"All employers are
+        required to report newly and re-hired employees to their state''s Directory
+        of New Hires within 20 days of their hire or re-hire data."},{"link_title":"Get
+        Workplace Posters","description":null,"url":"http:\/\/www.floridajobs.org\/workforce\/posters.html","category":"Employer
+        Requirements","county":null,"state":"FL","business_type":"Workplace Poster
+        Requirements","section":"State Posters","resource_group_description":"Obtain
+        workplace posters required under state labor laws:"},{"link_title":"Business
+        and Occupational Licenses","description":null,"url":"http:\/\/www.myflorida.com\/taxonomy\/business\/business%20licenses,%20permits%20and%20regulation\/","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"General
+        Business Licenses","section":null,"resource_group_description":"Information
+        about how to obtain business and occupational licenses and permits."},{"link_title":"Motor
+        Vehicle Dealer''s License Requirements","description":"Florida Dept of Highway
+        Safety and Motor Vehicles.","url":"http:\/\/www.flhsmv.gov\/dmv\/dmvdeal.html","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Auto Dealership","section":null,"resource_group_description":"The
+        following link(s) provide information on complying with federal and state
+        licensing requirements:"},{"link_title":"Barber Licenses","description":"Applications,
+        regulations and information. Florida Barber Board.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/pro\/barb\/barb_index.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Barber Shop","section":null,"resource_group_description":"State
+        licensing information for practitioners and shops."},{"link_title":"Cosmetology
+        Licenses","description":"Applications and information. Florida Board of Cosmetology.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/pro\/cosmo\/cos_index.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Beauty Salon","section":null,"resource_group_description":"State
+        licensing information for cosmetologists, hair stylists, nail technicians,
+        estheticians, salons, schools and instructors."},{"link_title":"Child Care
+        Licensing Information","description":"Florida Department of Children and Families.","url":"http:\/\/www.dcf.state.fl.us\/childcare\/","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Child Care
+        Services","section":null,"resource_group_description":"Contact the following
+        agency(ies) for licensing requirements:"},{"link_title":"Certified General
+        Contractor License","description":"The following categories require registration
+        or certification: general construction, building, residential, sheet metal,
+        roofing, air-conditioning, mechanical, swimming pool\/spa, plumbing, underground
+        utility and excavation, solar, and pollutant storage.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/pro\/cilb\/cilb_index.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Construction
+        Contractor","section":null,"resource_group_description":"You need to be registered
+        or certified to do construction work in Florida.  A \"registered\" contractor''s
+        license may be obtained from your local government.  If you obtain a local,
+        county or city contracting license, you must apply for initial state registration.  A
+        \"certified\" license is available from the state government, and allows you
+        to perform work anywhere in the state."},{"link_title":"Collection Agency
+        Licensing Requirements","description":"Florida Office of Financial Regulation.","url":"http:\/\/www.flofr.com\/Finance\/licensing-h.htm","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Debt Collection
+        Agency","section":null,"resource_group_description":null},{"link_title":"Electrical
+        Contractor and Electrician Licenses","description":"Florida Electrical Contractors''
+        Licensing Board.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/pro\/elboard\/elec_index.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Electrician","section":null,"resource_group_description":"Florida
+        law requires state licenses for electrical contractors and electricians."},{"link_title":"Massage
+        Therapy Licensing Requirements","description":"Florida Dept of Health.","url":"http:\/\/www.doh.state.fl.us\/mqa\/massage\/ma_lic_req.html","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Massage
+        Therapist","section":null,"resource_group_description":"Contact the following
+        government agency for licensing requirements:"},{"link_title":"Certified General
+        Contractor License","description":"Required for plumbing, HVACR, and mechanical
+        trades.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/pro\/cilb\/cilb_index.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Plumber","section":null,"resource_group_description":"Florida
+        requires a general Contractor''s License to perform plumbing work."},{"link_title":"Division
+        Hotels and Restaurants","description":"Licenses, inspects and regulates public
+        lodging and food service establishments in Florida.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/hr\/","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Restaurant","section":"Food
+        Service Establishment Permit","resource_group_description":"Public lodging
+        and food service establishments in Florida are licensed, inspected and regulated
+        by the State.  Institutional food establishments are licensed and inspected
+        by county health departments."},{"link_title":"Food and Meat Inspection","description":"Required
+        for certain types of food establishments, including bakeries and delicatessens.","url":"http:\/\/www.freshfromflorida.com\/onestop\/fs\/foodsafe.html","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Restaurant","section":"Food
+        Service Establishment Permit","resource_group_description":"Public lodging
+        and food service establishments in Florida are licensed, inspected and regulated
+        by the State.  Institutional food establishments are licensed and inspected
+        by county health departments."},{"link_title":"Alcohol Beverage License FAQs","description":"Florida
+        Division of Alcoholic Beverages and Tobacco.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/abt\/documents\/abt_frequently_asked_questions51209.pdf","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Restaurant","section":"Liquor
+        License","resource_group_description":"In order to sell and serve alcohol
+        in your restaurant, you are required to obtain a state liquor license. You
+        may also be required to obtain a license from your city or county government.
+        Check with your local government for specific licensing requirements."},{"link_title":"Alcohol
+        Beverage License - General Information","description":"Florida Division of
+        Alcoholic Beverages and Tobacco.","url":"http:\/\/www.myfloridalicense.com\/dbpr\/abt\/licenses.html","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Restaurant","section":"Liquor
+        License","resource_group_description":"In order to sell and serve alcohol
+        in your restaurant, you are required to obtain a state liquor license. You
+        may also be required to obtain a license from your city or county government.
+        Check with your local government for specific licensing requirements."},{"link_title":"Florida
+        Medicaid Provider Enrollment Information","description":null,"url":"http:\/\/portal.flmmis.com\/FLPublic\/Provider_Enrollment\/tabId\/50\/Default.aspx","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Home Health
+        Care","section":"Medicaid Enrollment","resource_group_description":"Home health
+        and personal care providers must enroll as Medicaid providers in order to
+        receive payments from patients receiving Medicaid benefits.   Providers may
+        also be required to meet additional training and certification requirements
+        to participate in Medicaid.  Visit your state\u00e2\u20ac\u2122s Medicaid
+        enrollment page for specific requirements:"},{"link_title":"Florida Home Health
+        Agency Licensing Information","description":null,"url":"http:\/\/www.fdhc.state.fl.us\/MCHQ\/Health_Facility_Regulation\/Home_Care\/Home_Health_Agency.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Home Health
+        Care","section":"Medical Care Provider","resource_group_description":"The
+        State of Florida requires home health care agencies to obtain a license."},{"link_title":"Homemaker
+        and Companion Service Registration","description":null,"url":"http:\/\/www.fdhc.state.fl.us\/MCHQ\/Health_Facility_Regulation\/Home_Care\/Homemakers_Companions.shtml","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Home Health
+        Care","section":"Non-Medical \/ Personal Care Provider","resource_group_description":"The
+        State of Florida requires personal care providers to register with the Florida
+        Agency for Health Care Administration"},{"link_title":"Florida Real Estate
+        Appraiser License","description":null,"url":"https:\/\/www.myfloridalicense.com\/intentions2.asp?chBoard=true&boardid=64&SID=","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Real Estate
+        Appraiser","section":null,"resource_group_description":"The state of Florida
+        requires all real estate appraisers to be licensed."},{"link_title":"Florida
+        Real Estate Broker and Sales Licenses","description":null,"url":"https:\/\/www.myfloridalicense.com\/intentions2.asp?chBoard=true&boardid=25&SID=","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Real Estate
+        Agent or Broker","section":null,"resource_group_description":"The state of
+        Florida requires all real estate brokers and salespersons to be licensed."},{"link_title":"Florida
+        Money Services Business Forms and Applications","description":null,"url":"http:\/\/www.flofr.com\/Finance\/licensing-i.htm","category":"State
+        Licenses and Permits","county":null,"state":"FL","business_type":"Money Services
+        Business","section":"State License","resource_group_description":"The State
+        of Florida requires businesses engaged in money transmitting services to obtain
+        a license."},{"link_title":"Register Online to Collect and\/or Report Taxes","description":null,"url":"http:\/\/dor.myflorida.com\/dor\/taxes\/registration.html","category":"Tax
+        Registration","county":null,"state":"FL","business_type":"State Tax Registration","section":null,"resource_group_description":"Businesses
+        that operate within Florida are required to register for one or more tax-specific
+        identification numbers, licenses or permits, including income tax withholding,
+        sales and use tax (seller''s permit), and unemployment insurance tax. Contact
+        the following agency for more information about business registration and
+        your tax obligations:"},{"link_title":"General Tax Information and Forms","description":null,"url":"http:\/\/dor.myflorida.com\/dor\/businesses\/","category":"Tax
+        Registration","county":null,"state":"FL","business_type":"State Tax Registration","section":null,"resource_group_description":"Businesses
+        that operate within Florida are required to register for one or more tax-specific
+        identification numbers, licenses or permits, including income tax withholding,
+        sales and use tax (seller''s permit), and unemployment insurance tax. Contact
+        the following agency for more information about business registration and
+        your tax obligations:"}],"sites_for_business_type":[],"sites_for_category":[]}'
+    http_version: '1.1'
+  recorded_at: Sat, 01 Jun 2013 22:21:55 GMT
+recorded_with: VCR 2.5.0
