@@ -8,10 +8,9 @@ class StateRequirements < ActiveRecord::Migration
       t.string     :business_type
       t.string     :section
       t.text       :resource_group_description
-      t.references :state
+      t.string     :state_abbr
 
       t.timestamps
     end
-    add_index :state_requirements, :state_id
   end
 end

@@ -21,12 +21,10 @@ ActiveRecord::Schema.define(:version => 20130601183743) do
     t.string   "business_type"
     t.string   "section"
     t.text     "resource_group_description"
-    t.integer  "state_id"
+    t.string   "state_abbr"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
   end
-
-  add_index "state_requirements", ["state_id"], :name => "index_state_requirements_on_state_id"
 
   create_table "states", :force => true do |t|
     t.string "state_abbr"

@@ -22,8 +22,7 @@ map.selectAll("g.state")
 
   var fl = map.select("path#FL")
   .attr("fill", "green")
-  .on("click",function() { alert("You clicked on FL");});
+  .on("click", function() { window.location = '/maps/' + this.id;})
+  .attr("style", "cursor: pointer");
 
-
-console.log(gon.reqs);
 
