@@ -15,9 +15,9 @@ describe SBA do
           sba = SBA.new
           requirements = sba.requirements_for "FL"
           state_req    = StateRequirement.last
-          state        = State.find state_req.state_id
+          state        = state_req.state_abbr
 
-          expect(state.state_abbr).to eq "FL"
+          expect(state).to eq "FL"
         end
       end
     end
