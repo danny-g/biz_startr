@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 gem 'faraday', '~> 0.8.7'
 gem 'pg', '~> 0.15.1'
 gem 'd3-rails'
-
+gem 'gon', '~> 4.1.0'
 
 group :test do
   gem 'sqlite3'
