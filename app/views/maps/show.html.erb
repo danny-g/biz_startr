@@ -1,0 +1,28 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Website</th>
+      <th>Category</th>
+      <th>Business Type</th>
+      <th>Section</th>
+      <th>Resource</th>
+      <th>State</th>
+    </tr>
+  </thead>
+    <% @state_reqs.each do |state_req| %>
+      <tbody>
+        <tr>
+          <td><%= state_req.title %></td>
+          <td><%= state_req.description %></td>
+          <td><%= state_req.url %></td>
+          <td><%= state_req.category %></td>
+          <td><%= state_req.business_type %></td>
+          <td><%= state_req.section %></td>
+          <td><%= state_req.resource_group_description %></td>
+          <td><%= state_req.state_abbr %></td>
+        </tr>
+      </tbody>
+  <% end %>
+</table>
