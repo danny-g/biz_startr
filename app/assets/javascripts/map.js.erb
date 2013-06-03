@@ -1,0 +1,29 @@
+var viewport = d3.select("div#viewport")
+var map = d3.select("svg");
+
+// center the container/viewport on the screen
+viewport.attr("style", "margin: 50px auto auto 150px");
+
+
+// Color all 50 states but Michigan which is wrapped in a g element
+map.selectAll("path.state")
+  .attr("fill","#d3d3d3")
+  .attr("stroke", "#fff")
+  .attr("stroke-width", 0.75)
+  .attr("stroke-opacity", 1);
+
+// Michigan is wrapped in a g element
+map.selectAll("g.state")
+.attr("fill","#d3d3d3")
+.attr("stroke", "#fff")
+.attr("stroke-width", 0.75)
+.attr("stroke-opacity", 1);
+
+
+  var fl = map.select("path#FL")
+  .attr("fill", "green")
+  .on("click",function() { alert("You clicked on FL");});
+
+
+console.log(gon.reqs);
+
