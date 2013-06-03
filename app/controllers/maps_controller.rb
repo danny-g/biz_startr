@@ -1,6 +1,6 @@
 class MapsController < ApplicationController
 
-  def show
-
+  def index
+    gon.reqs = StateRequirement.all
   end
 end
