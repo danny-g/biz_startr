@@ -6,7 +6,7 @@ class StateRequirement < ActiveRecord::Base
                   :business_type,
                   :section,
                   :resource_group_description,
-                  :state_id
+                  :state_abbr
 
   def self.create_requirement req
     create(
@@ -17,7 +17,8 @@ class StateRequirement < ActiveRecord::Base
       business_type:              req["business_type"],
       section:                    req["section"],
       resource_group_description: req["resource_group_description"],
-      state_id:                   State.where(state_abbr: req["state"]).first.id
+      state_abbr:                 req["state"]
+      # state_id:                   State.where(state_abbr: req["state"]).first.id
       )
   end
 end
