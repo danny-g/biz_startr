@@ -19,10 +19,35 @@ map.selectAll("g.state")
 .attr("stroke-width", 0.75)
 .attr("stroke-opacity", 1);
 
+// add links to each state that redirects to 'maps/state_goes_here'
+for (var i = 0; i < gon.state_abbrs.length; i++) {
+  map.select("path#" + gon.state_abbrs[i].state_abbr)
+    .attr("fill", "green")
+    .on("click", function() {
+      // window.location = '/maps/' + this.id;
+      window.location = '/maps?id=' + this.id;
 
-  var fl = map.select("path#FL")
-  .attr("fill", "green")
-  .on("click", function() { window.location = '/maps/' + this.id;})
-  .attr("style", "cursor: pointer");
 
+      // Get the content for this state
+      // respond_to do
+      //  format.json { json: @data }
+      // end
+
+      // var destination = $('#stateInformation');
+
+      // var state = this.id;
+      // $.getJSON("/maps/" + state,function() {
+      //   // Remove the old content
+      //   destination.html("");
+
+      //   // Add the new content
+
+      //   // Scroll the screen down
+
+      // });
+
+
+    })
+    .attr("style", "cursor: pointer");
+}
 

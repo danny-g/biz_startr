@@ -1,4 +1,8 @@
 <div id="viewport">
 <%= render "map" %>
 <%= javascript_include_tag "map" %>
+
+<% if @state_reqs %>
+  <%= render "state_requirements" %>
+<% end %>
 </div>
