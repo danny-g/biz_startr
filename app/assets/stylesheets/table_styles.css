@@ -1,0 +1,36 @@
+div.tbl {
+    position: relative;
+    margin: 100px 50px;
+    padding: 39px 19px 14px;
+    border: 1px solid #ddd;
+  }
+table {
+  table-layout: fixed;
+}
+
+td {
+  word-wrap: break-word;
+  width: 10  }
+
+td.column {
+  /*width: 100px;*/
+}
+
+div#backToTop {
+  position:fixed;
+  bottom: 5px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 50px;
+  height: 50px
+}
+
+div#backToTop a {
+  vertical-align: text-bottom;
+  color: white;
+}
+
+div#backToTop a:hover {
+  text-decoration: none;
+}
