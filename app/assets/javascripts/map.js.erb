@@ -23,31 +23,54 @@ map.selectAll("g.state")
 for (var i = 0; i < gon.state_abbrs.length; i++) {
   map.select("path#" + gon.state_abbrs[i].state_abbr)
     .attr("fill", "green")
+    .attr("style", "cursor: pointer")
     .on("click", function() {
-      // window.location = '/maps/' + this.id;
-      window.location = '/maps?id=' + this.id;
+
+      var destination = $('#stateInformation');
+
+      var state = this.id;
+      $.getJSON("/maps/" + state,function(response) {
 
 
-      // Get the content for this state
-      // respond_to do
-      //  format.json { json: @data }
-      // end
+        // Add the new content
+        var source   = $("#state-reqs-table").html();
+        var template = Handlebars.compile(source);
+        var html    = template({ reqs: response });
+        destination.html(html);
 
-      // var destination = $('#stateInformation');
-
-      // var state = this.id;
-      // $.getJSON("/maps/" + state,function() {
-      //   // Remove the old content
-      //   destination.html("");
-
-      //   // Add the new content
-
-      //   // Scroll the screen down
-
-      // });
-
-
-    })
-    .attr("style", "cursor: pointer");
+        // Scroll the screen down
+        var tableTop = destination.get(0).offsetTop;
+        var newTop = tableTop - 50;
+        $("html, body").animate({ scrollTop: newTop + "px" }, 800 )
+      });
+    });
 }
+
+// Scroll back to top
+
+$(document).ready(function(){
+
+  // hide #backToTop button first
+  $("#backToTop").hide();
+
+  // fade in #backToTop button
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#backToTop').fadeIn();
+      } else {
+        $('#backToTop').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#backToTop a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
 
