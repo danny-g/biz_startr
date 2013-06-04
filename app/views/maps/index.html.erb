@@ -1,8 +1,42 @@
 <div id="viewport">
 <%= render "map" %>
 <%= javascript_include_tag "map" %>
-
-<% if @state_reqs %>
-  <%= render "state_requirements" %>
-<% end %>
 </div>
+
+<div id="stateInformation">
+</div>
+
+<div id="backToTop">
+  <a href="#">^</a>
+</div>
+
+<script id="state-reqs-table" type="text/x-handlebars-template">
+  <div class="tbl">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Requirements</th>
+        <th>Description</th>
+        <th>Website</th>
+        <th>Category</th>
+        <th>Type</th>
+        <th>Section</th>
+        <th>Resource</th>
+      </tr>
+    </thead>
+      <tbody>
+        {{#each reqs }}
+            <tr>
+              <td class="column">{{title }}</td>
+              <td class="column">{{description }}</td>
+              <td class="column">{{url }}</td>
+              <td class="column">{{category }}</td>
+              <td class="column">{{business_type }}</td>
+              <td class="column">{{section }}</td>
+              <td id="resource">{{resource_group_description }}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+  </table>
+</div>
+</script>
