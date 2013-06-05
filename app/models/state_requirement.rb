@@ -18,7 +18,6 @@ class StateRequirement < ActiveRecord::Base
       section:                    req["section"],
       resource_group_description: req["resource_group_description"],
       state_abbr:                 req["state"]
-      # state_id:                   State.where(state_abbr: req["state"]).first.id
       )
   end
 end

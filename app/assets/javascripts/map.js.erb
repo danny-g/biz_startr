@@ -5,40 +5,33 @@ var map = d3.select("svg");
 viewport.attr("style", "margin: 50px auto auto 150px");
 
 
-// Color all 50 states but Michigan which is wrapped in a g element
+// Color all 50 states
 map.selectAll("path.state")
-  .attr("fill","#d3d3d3")
+  .attr("fill", "green")
   .attr("stroke", "#fff")
   .attr("stroke-width", 0.75)
   .attr("stroke-opacity", 1);
 
-// Michigan is wrapped in a g element
-map.selectAll("g.state")
-.attr("fill","#d3d3d3")
-.attr("stroke", "#fff")
-.attr("stroke-width", 0.75)
-.attr("stroke-opacity", 1);
+
 
 // add links to each state that redirects to 'maps/state_goes_here'
 for (var i = 0; i < gon.state_abbrs.length; i++) {
   map.select("path#" + gon.state_abbrs[i].state_abbr)
-    .attr("fill", "green")
     .attr("style", "cursor: pointer")
     .on("click", function() {
 
       var destination = $('#stateInformation');
-
       var state = this.id;
       $.getJSON("/maps/" + state,function(response) {
 
 
-        // Add the new content
+        // Add state table info
         var source   = $("#state-reqs-table").html();
         var template = Handlebars.compile(source);
         var html    = template({ reqs: response });
         destination.html(html);
 
-        // Scroll the screen down
+        // Scroll the screen down to view table
         var tableTop = destination.get(0).offsetTop;
         var newTop = tableTop - 50;
         $("html, body").animate({ scrollTop: newTop + "px" }, 800 )
@@ -71,6 +64,5 @@ $(document).ready(function(){
       return false;
     });
   });
-
 });
 
