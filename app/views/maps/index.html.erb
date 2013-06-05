@@ -1,4 +1,5 @@
 <div id="viewport">
+<div id="map-header"><h3 class="custom-font">Go ahead, click on a state.</h3></div>
 <%= render "map" %>
 <%= javascript_include_tag "map" %>
 </div>
@@ -29,7 +30,7 @@
             <tr>
               <td class="column">{{title }}</td>
               <td class="column">{{description }}</td>
-              <td class="column">{{url }}</td>
+              <td class="column" id="url"><a href={{url }}>{{url }}</a></td>
               <td class="column">{{category }}</td>
               <td class="column">{{business_type }}</td>
               <td class="column">{{section }}</td>

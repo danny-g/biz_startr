@@ -24,7 +24,6 @@ for (var i = 0; i < gon.state_abbrs.length; i++) {
       var state = this.id;
       $.getJSON("/maps/" + state,function(response) {
 
-
         // Add state table info
         var source   = $("#state-reqs-table").html();
         var template = Handlebars.compile(source);

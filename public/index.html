@@ -2,10 +2,42 @@
 <html>
   <head>
   <link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="landing_page.css" type="text/css" media="screen">
+  <link href='http://yui.yahooapis.com/pure/0.1.0/buttons-min.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="landing_page.css" type="text/css" media="screen">
   </head>
 
-  <div id="intro">
-    <p id="logo"><span id="biz">Biz</span><span id="startr">Startr</span></p>
-  </div>
+    <div id="intro">
+      <p id="logo"><span id="biz">Biz</span><span id="startr">Startr</span></p>
+      <div id="valueStatement">
+        <p>Looking to start a business? Understanding state requirements and regulations can be a hassle. With BizStartr you have access to information regarding all the federal, state, and local licences and permits required to start a business in your state.
+        </p>
+      </div>
+      <div id="el-button">
+        <input id="start-now" class="pure-button" type="button" value="Try it!" onclick="location.href='/maps';">
+      </div>
+    </div>
+
+    <div class="row demo-tiles center-tiles">
+      <div class="span3">
+        <div class="tile tile-height">
+          <img src="map.png" alt="US Map" height="165" width="300">
+          <h3 class="tile-title">Intuitive</h3>
+          <p>Want to start a business a particular?</p>
+          <p>Simply click on a state to get information about it</p>
+        </div>
+      </div>
+
+      <div class="span3">
+        <div class="tile tile-height">
+          <img src="sba.jpg" alt="SBA" height="165" width="300">
+          <h3 class="tile-title">Access to SBA's database</h3>
+          <p>
+            BizStartr integrates with the SBA's API to get you federal, state, and local requirements to start a business in your state.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
 </html>
