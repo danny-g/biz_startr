@@ -8,6 +8,8 @@ Uses D3.js to visualize data provided by one of the SBA's APIs.
 
 2) `bundle install`
 
+3) Have fun!
+
 ## Want to check it out online? 
 
 http://bizstartr.herokuapp.com/
