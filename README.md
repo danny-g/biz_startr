@@ -1,4 +1,4 @@
-## Business Startr
+## BizzStartr
 
 Uses D3.js to visualize data provided by one of the SBA's APIs.
 
